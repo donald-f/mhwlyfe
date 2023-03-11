@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"></meta>
+    <title>MHW Lyfe</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <script defer src="script.js?version=1.1"></script>
+    <script defer src="roars.js?version=1.1"></script>
+  </head>
+  <body>
+      <div class="all-content">
+      <h1>MHW Lyfe</h1>
+      <p>Hello friends! I initially created this page to see what each monster's roar level was like (with search functionality and without rolling advertisements in the background!). It has since evolved so that each monster's name is clickable and will allow you to see more details on that monster.</p>
+    <!-- <h6 class="go-home"></h6> -->
+    <p>On a side note, please take a look <a href="./sub-directories/other-links.html">here</a> for a list of other web pages I have found useful.</p>
+    <h2>Earplugs Effect</h2>
+
+    <p>
+      <strong>Earplugs</strong> is increased in level based on the amount of
+      Equipment with this skill the hunter is using. Each level works as
+      follows:
+    </p>
+    <ul>
+      <li>
+        <strong> Level 1</strong>: Slightly reduces the effects of weak monster
+        roars
+      </li>
+      <li>
+        <strong> Level 2</strong>: Reduces the effects of weak monster roars
+      </li>
+      <li><strong> Level 3</strong>: Nullifies weak monster roars</li>
+      <li>
+        <strong>Level 4</strong>: Nullifies weak monster roars and reduces the
+        effects of strong monster roars
+      </li>
+      <li>
+        <strong> Level 5</strong>: Nullifies weak and strong monster roars
+      </li>
+    </ul>
+    <h2>Monster List Organized by Roar Level</h2>
+    <div id="monster-search-sec">
+    <p class="mon-search-label">Search Monster Name: </p><input id="monster-search" type="text" /> &nbsp;
+    <input type="button" id="monster-search-clear" value="Clear" />
+</div>
+    <table>
+      <thead class="roar-header-row">
+        <tr style="text-align: center; height: 62px">
+          <td style="height: 62px">No Roar<br />No Need</td>
+          <td style="height: 62px">Weak Roar<br />Levels 1, 2 and 3</td>
+          <td style="height: 62px">Strong Roar<br />Levels 4 and 5</td>
+        </tr>
+      </thead>
+      <tbody class="monster-roar-tbl">
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">
+            <a  title="" target="">Great Girros</a>
+          </td>
+          <td style="text-align: center; height: 46px">
+            <a id="anja" title="" target="">Anjanath</a>
+          </td>
+          <td style="text-align: center; height: 46px">
+            <a  title="" target="">Azure Rathalos</a>
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">
+            <a  title="" target="">Great Jagras</a>
+          </td>
+          <td style="text-align: center; height: 46px">
+            <a  title="" target="">Barroth</a>
+          </td>
+          <td style="text-align: center; height: 46px">
+            <a  title="" target="">Bazelgeuse</a>
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">
+            <a  title="" target="">Jyuratodus</a>
+          </td>
+          <td style="text-align: center; height: 46px">
+            <a  title="" target="">Dodogama</a>
+          </td>
+          <td style="text-align: center; height: 46px">
+            <a  title="" target="">Black Diablos</a>
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">
+            <a  title="" target="">Kirin</a>
+          </td>
+          <td style="text-align: center; height: 46px">
+            <a  title="" target="">Paolumu</a>
+          </td>
+          <td style="text-align: center; height: 46px">
+            <a  title="" target="">Diablos</a>
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">
+            <a  title="" target="">Kulu-Ya-Ku</a>
+          </td>
+          <td style="text-align: center; height: 46px">
+            <a  title="" target="">Pukei-Pukei</a>
+          </td>
+          <td style="text-align: center; height: 46px">
+            <a  title=""  target=""
+              >Kushala Daora</a
+            >
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">
+            <a  title=""  target=""
+              >Lavasioth</a
+            >
+          </td>
+          <td style="text-align: center; height: 46px">
+            <a  title=""  target=""
+              >Pink Rathian</a
+            >
+          </td>
+          <td style="text-align: center; height: 46px">
+            <a  title=""  target="">Legiana</a>
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">
+            <a  title=""  target=""
+              >Tzitzi-Ya-Ku</a
+            >
+          </td>
+          <td style="text-align: center; height: 46px">
+            <a  title=""  target=""
+              >Radobaan</a
+            >
+          </td>
+          <td style="text-align: center; height: 46px">
+            <a  title=""  target=""
+              >Nergigante</a
+            >
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">
+            <a  title="" target=""
+              >Zorah Magdaros</a
+            >
+          </td>
+          <td style="text-align: center; height: 46px">
+            <a  title=""  target=""
+              >Odogaron</a
+            >
+          </td>
+          <td style="text-align: center; height: 46px">
+            <a  title=""  target=""
+              >Rathalos</a
+            >
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">
+            <a  title="" target="">Rathian</a>
+          </td>
+          <td style="text-align: center; height: 46px">
+            <a  title=""  target="">Teostra</a>
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">
+            <a  title="Tobi-kadachi" "
+              >Tobi-kadachi</a
+            >
+          </td>
+          <td style="text-align: center; height: 46px">
+            <a  title="" " target=""
+              >Vaal Hazak</a
+            >
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">
+            <a  title="" " target="">Uragaan</a>
+          </td>
+          <td style="text-align: center; height: 46px">
+            <a  title=""  target=""
+              >Xeno'jiiva</a
+            >
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">
+            <a  title="Beotodus" >Beotodus</a>
+          </td>
+          <td style="text-align: center; height: 46px">
+            <a  title="Devilho" >Deviljho</a>
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">
+            <a  title="Banbaro" >Banbaro</a>
+          </td>
+          <td style="text-align: center; height: 46px">
+            <a  title="Kulve Taroth" 
+              >Kulve Taroth</a
+            >
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">
+            <a
+              
+              title="Viper Tobi-Kadachi"
+              
+              >Viper Tobi-Kadachi</a
+            >
+          </td>
+          <td style="text-align: center; height: 46px">
+            <a  title="Barioth" >Barioth</a>
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">
+            <a  title="Fulgur Anjanath" 
+              >Fulgur Anjanath</a
+            >
+          </td>
+          <td style="text-align: center; height: 46px">
+            <a
+              
+              title="Frostfang Barioth "
+              
+              >Frostfang Barioth
+            </a>
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">
+            <a
+              
+              title="Nightshade Paolumu"
+              
+              >Nightshade Paolumu</a
+            >
+          </td>
+          <td style="text-align: center; height: 46px">
+            <a  title="Nargacuga" 
+              >Nargacuga</a
+            >
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">
+            <a
+              
+              title="Coral Pukei-Pukei"
+              
+              >Coral Pukei-Pukei</a
+            >
+          </td>
+          <td style="text-align: center; height: 46px">
+            <a  title="Glavenus" >Glavenus</a>
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">
+            <a  title="Ebony Odogaron" 
+              >Ebony Odogaron</a
+            >
+          </td>
+          <td style="text-align: center; height: 46px">
+            <a  title="Tigrex" >Tigrex</a>
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">
+            <a  title="Zinogre" >Zinogre</a>
+          </td>
+          <td style="text-align: center; height: 46px">
+            <a  title="Brachydios" 
+              >Brachydios</a
+            >
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">
+            <a
+              
+              title="Stygian Zinogre "
+              
+              >Stygian Zinogre</a
+            >
+          </td>
+          <td style="text-align: center; height: 46px">
+            <a
+              
+              title="Shrieking Legiana"
+              
+              >Shrieking Legiana</a
+            >
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">
+            <a  title="Acidic Glavenus" 
+              >Acidic Glavenus</a
+            >
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">
+            <a  title="Velkhana" >Velkhana</a>
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">
+            <a
+              
+              title="Seething Bazelgeuse"
+              
+              >Seething Bazelgeuse</a
+            >
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">
+            <a
+              
+              title="Blackveil Vaal Hazak"
+              
+              >Blackveil Vaal Hazak</a
+            >
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">
+            <a  title="Namielle" >Namielle</a>
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">
+            <a  title="Savage Deviljho" 
+              >Savage Deviljho</a
+            >
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">
+            <a
+              
+              title="Ruiner Nergigante"
+              
+              >Ruiner Nergigante</a
+            >
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">
+            <a  title="Shara Ishvalda" 
+              >Shara Ishvalda</a
+            >
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">
+            <a  title="Yian Garuga" 
+              >Yian Garuga</a
+            >
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">
+            <a
+              
+              title="Scarred Yian Garuga"
+              
+              >Scarred Yian Garuga</a
+            >
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">
+            <a  title="Brute Tigrex" 
+              >Brute Tigrex</a
+            >
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">
+            <a  title="Gold Rathian" 
+              >Gold Rathian</a
+            >
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">
+            <a  title="Silver Rathalos" 
+              >Silver Rathalos</a
+            >
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">
+            <a  title="Rajang" >Rajang</a>
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">
+            <a  title="Furious Rajang" 
+              >Furious Rajang</a
+            >
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">
+            <a  title="Safi'jiiva">Safi'jiiva</a>
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">
+            <a  title="Raging Brachydios">Raging Brachydios</a>
+          </td>
+        </tr>
+        <tr style="height: 46px">
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">&nbsp;</td>
+          <td style="text-align: center; height: 46px">
+            <a  title="Alatreon">Alatreon</a>
+          </td>
+        </tr>
+        <tr style="height: 36.6667px">
+          <td style="text-align: center; height: 36.6667px">&nbsp;</td>
+          <td style="text-align: center; height: 36.6667px">&nbsp;</td>
+          <td style="text-align: center; height: 36.6667px">
+            <a  title="Fatalis">Fatalis</a>
+          </td>
+        </tr>
+        <tr style="height: 36.6667px">
+          <td style="text-align: center; height: 36.6667px">&nbsp;</td>
+          <td style="text-align: center; height: 36.6667px">&nbsp;</td>
+          <td style="text-align: center; height: 36.6667px">
+            <a  title="Lunastra">Lunastra</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- example start  -->
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn" class="removed">Open Modal</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="monster-detail"></div>
+        <!-- <p id="testing">Some text in the Modal..</p> -->
+      </div>
+    </div>
+    <!-- Example end -->
+    <footer></footer>
+</div>
+  </body>
+</html>
