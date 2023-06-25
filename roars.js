@@ -106,7 +106,8 @@ const getMonsAttTypeOrLocal = function (strtStr, whatToPull, elementOrAilment) {
   return finalString;
 };
 
-// intermitently calling this function until data pulls into array from api
+// intermitently calling this function until data pulls into array from api.
+// ^^ LOL this was before I learned about asyncronous javascript -- needs updating!
 
 function waitForMonAPI() {
   if (typeof monsterz[57] !== 'undefined') {
@@ -127,6 +128,11 @@ function waitForMonAPI() {
             let displayMonster = monsterz.find(
               mon => Number(mon.id) === Number(monsterCell[i].dataset.id)
             );
+            const displayMonsterText = this.textContent;
+            const displayMonsterURL = `https://monsterhunterworld.wiki.fextralife.com/${displayMonsterText.replace(
+              ' ',
+              '+'
+            )}`;
             if (displayMonster) {
               let tableString = `<table class="monster-weak-res-table"><thead><tr style="text-align: center; height: 62px">
               <td style="height: 62px">Element</td>
@@ -193,20 +199,16 @@ function waitForMonAPI() {
                 displayMonster.ailments === []
                   ? ''
                   : '<i> &nbsp&nbsp*More info on ailments can be found below the table</i>'
-              }</p><p>${locations}</p>${tableString}<p><i>${ailmentsDescriptions}</i></p>`;
+              }</p><p>${locations}</p>${tableString}<p><i>${ailmentsDescriptions}</i></p><a href="${displayMonsterURL}" target="_blank">${displayMonsterText} Wiki Page</a>`;
               displayModal();
             } else {
               //   alert(
               //     "Don't have data on this monster, please see the following picture for all monsters."
               //   );
               //   window.open('full-monster-guide.png');
-              displayMonster = this.textContent;
-              const displayMonsterURL = `https://monsterhunterworld.wiki.fextralife.com/${displayMonster.replace(
-                ' ',
-                '+'
-              )}`;
-              modMonDetailDivEl.innerHTML = `<h2>${displayMonster}</h2><p>The data for this monster is not available on this site yet, but you can reference the MHW wiki site (has ads, opens in new window):<br>
-              <a href="${displayMonsterURL}" target="_blank">${displayMonster} wiki page</a></p><p>Alternatively, you can reference a picture that details monster info for all monsters (no ads, opens in new page, large pic - better option for bigger screens):<br><a href='full-monster-guide.png' target="_blank">Full monster guide picture</a></p>`;
+
+              modMonDetailDivEl.innerHTML = `<h2>${displayMonsterText}</h2><p>The data for this monster is not available on this site yet, but you can reference the MHW wiki site (has ads, opens in new window):<br>
+              <a href="${displayMonsterURL}" target="_blank">${displayMonsterText} wiki page</a></p><p>Alternatively, you can reference a picture that details monster info for all monsters (no ads, opens in new page, large pic - better option for bigger screens):<br><a href='full-monster-guide.png' target="_blank">Full monster guide picture</a></p>`;
               displayModal();
             }
           });
