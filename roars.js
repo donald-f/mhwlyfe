@@ -127,10 +127,7 @@ function waitForMonAPI() {
             let displayMonster = monsterz.find(
               mon => Number(mon.id) === Number(monsterCell[i].dataset.id)
             );
-            // console.log(displayMonster);
             if (displayMonster) {
-              // document.getElementById('testing').textContent =
-              //   displayMonster.name;
               let tableString = `<table class="monster-weak-res-table"><thead><tr style="text-align: center; height: 62px">
               <td style="height: 62px">Element</td>
               <td style="height: 62px">Effectiveness</td>

@@ -119,3 +119,8 @@ thead td {
   text-decoration: none;
   cursor: pointer;
 }
+
+/* links page */
+ul.other--links > li {
+  margin-bottom: 10px;
+}
